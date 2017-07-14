@@ -1,7 +1,8 @@
 {
   "name": "wkh",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "git@github.com:mudcrab/wkh.git",
   "author": "Jevgeni Krasnosjolov <jevgeni@pitfire.io>",
   "license": "MIT",
@@ -10,7 +11,7 @@
     "watch:tsc": "tsc --watch",
     "watch:js": "nodemon dist/index.js",
     "dev": "NODE_ENV=development run-p watch:*",
-    "prepublish": "npm run tsc"
+    "prepublish": "tsc"
   },
   "devDependencies": {
     "@types/node": "^6.0.81",
