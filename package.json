@@ -1,0 +1,33 @@
+{
+  "name": "wkh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mudcrab/wkh.git",
+  "author": "Jevgeni Krasnosjolov <jevgeni@pitfire.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch:tsc": "tsc --watch",
+    "watch:js": "nodemon dist/index.js",
+    "dev": "NODE_ENV=development run-p watch:*",
+    "prepublish": "npm run tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.81",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-jwt": "^3.2.0",
+    "@types/koa-router": "^7.0.22",
+    "@types/koa-static": "^3.0.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-jwt": "^3.2.2",
+    "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1"
+  }
+}
